@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.105.99.75:3306/mybatis_note?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    username: root
+    password: 782231
+
+  freemarker:
+    suffix: .ftl
+
+# MyBatis
+mybatis:
+  # 搜索指定包别名
+  type-aliases-package: com.wade.mybatisnote.model
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapper-locations: classpath*:mapper/**/*Mapper.xml
